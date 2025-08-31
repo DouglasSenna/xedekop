@@ -76,15 +76,15 @@ body {
 
 /* Classes de piscar */
 .piscando-red {
-  animation: piscarRed 3s infinite; /* ALTERAÇÃO: padronizei a duração */
+  animation: piscarRed 2s infinite; /* ALTERAÇÃO: padronizei a duração */
 }
 
 .piscando-yellow {
-  animation: piscarYellow 5s infinite;
+  animation: piscarYellow 4s infinite;
 }
 
 .piscando-green {
-  animation: piscarGreen 4s infinite;
+  animation: piscarGreen 3s infinite;
 }
 
 @keyframes piscarRed {
