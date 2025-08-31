@@ -28,7 +28,7 @@ body {
   max-height: 1300px; /* limita altura máxima */
 }
 
-.versao{
+.versao {
   position: absolute;
 }
 
@@ -57,21 +57,83 @@ body {
   cursor: pointer;
 }
 
-.btn-select{
+.btn-select {
   position: absolute;
   top: 72%;
   right: 73.5%;
 }
 
-#select{
-  width: 39px;
-  height: 39px;
-  background-color: #595a5c;
-  border-radius: 50%;
-  border: 1px solid black;
-  box-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
-  cursor: pointer
-;
+#select {
+  width: 43px;
+  height: 43px;
+  background: linear-gradient(145deg, #898a8c, #595a5c);
+
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.direcionais {
+  position: absolute; /* flutua sobre o container */
+  top: 71%; /* ajusta verticalmente todo o conjunto */
+  left: 59%; /* centraliza horizontalmente o conjunto */
+  width: 90px;
+  height: 90px;
+}
+
+#up {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  width: 25px;
+  height: 35px;
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #898a8c, #595a5c);
+  cursor: pointer;
+}
+
+#down {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  width: 25px;
+  height: 35px;
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #898a8c, #595a5c);
+  cursor: pointer;
+}
+
+#left {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  width: 35px;
+  height: 25px;
+  transform: translateY(-50%);
+  background: linear-gradient(145deg, #898a8c, #595a5c);
+  cursor: pointer;
+}
+
+#rigth {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  width: 35px;
+  height: 25px;
+  transform: translateY(-50%);
+  background: linear-gradient(145deg, #898a8c, #595a5c);
+  cursor: pointer;
+}
+
+#miolo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(145deg, #898a8c, #595a5c);
+  border: solid 1.5px black;
+  font-size: 18px;
 }
 
 .leds {
@@ -144,5 +206,4 @@ body {
   body {
     background-color: black;
   }
-
 }
