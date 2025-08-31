@@ -42,8 +42,8 @@ body {
 .turn-on {
   width: 30px;
   position: absolute;
-  top: 318px; /* ALTERAÇÃO: posicionei em relação ao container */
-  right: 270px;
+  top: 64%; /* ALTERAÇÃO: posicionei em relação ao container */
+  right: 67.5%;
 }
 
 #power {
@@ -59,8 +59,8 @@ body {
 
 .leds {
   position: absolute;
-  top: 43px; /* ALTERAÇÃO: LEDs posicionados em relação ao container */
-  left: 125px;
+  top: 8.5%; /* ALTERAÇÃO: LEDs posicionados em relação ao container */
+  left: 31%;
   display: flex;
   gap: 5px;
 }
@@ -128,10 +128,10 @@ body {
     background-color: red;
   }
 
-  .container-principal {
+  /* .container-principal {
     background-color: red;
-    width: 500px;
-  }
+    /* width: 500px; */
+  /* }
 
   .leds {
     left: 158px;
@@ -145,10 +145,10 @@ body {
 
   .turn-on{
     right: 343px;
-  }
+  }  */
 
-  #power{
+  /* #power{
     width: 34px;
     height: 34px;
-  }
+  } */
 }
