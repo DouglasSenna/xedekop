@@ -57,6 +57,23 @@ body {
   cursor: pointer;
 }
 
+.btn-select{
+  position: absolute;
+  top: 72%;
+  right: 73.5%;
+}
+
+#select{
+  width: 39px;
+  height: 39px;
+  background-color: #595a5c;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: -2px 2px 0px rgba(0, 0, 0, 1);
+  cursor: pointer
+;
+}
+
 .leds {
   position: absolute;
   top: 8.5%; /* ALTERAÇÃO: LEDs posicionados em relação ao container */
