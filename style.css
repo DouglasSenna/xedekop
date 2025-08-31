@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   width: auto;
   display: flex;
   justify-content: center;
@@ -125,7 +125,7 @@ body {
 
 @media (max-width: 1100px) {
   body {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
   }
 
 }
