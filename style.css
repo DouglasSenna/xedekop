@@ -28,6 +28,17 @@ body {
   max-height: 1300px; /* limita altura máxima */
 }
 
+.versao{
+  position: absolute;
+}
+
+.versao p {
+  position: relative;
+  bottom: 150px;
+  left: 80px;
+  color: white;
+}
+
 .turn-on {
   width: 30px;
   position: absolute;
@@ -36,7 +47,7 @@ body {
 }
 
 #power {
-  background-color: red;
+  background-color: #d12429;
   border-radius: 50px;
   width: 30px;
   height: 30px;
