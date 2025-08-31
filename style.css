@@ -1,94 +1,114 @@
-*{
-       margin: 0;
-          padding: 0;
-             box-sizing: border-box;
-             }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-             body {
-                height: 100vh;
-                   display: flex;
-                      justify-content: center;
-                         align-items: center;
-                            background-color: black;
-                            }
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
 
-                            .container-principal {
-                               position: relative; /* ALTERAÇÃO: adicionei para LEDs e botão */
-                                  display: flex;
-                                     justify-content: center;
-                                        align-items: center;
-                                           flex-direction: row;
-                                              width: 1050px; 
-                                                 height: 1500px; /* ALTERAÇÃO: altura definida para a tela aparecer */
-                                                 }
+.container-principal {
+  position: relative; /* ALTERAÇÃO: adicionei para LEDs e botão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 1050px;
+  height: 1500px; /* ALTERAÇÃO: altura definida para a tela aparecer */
+}
 
-                                                 #poke{
-                                                     width: 100%;      /* ALTERAÇÃO: ajustar largura automática */
-                                                         height: 100%;     /* ALTERAÇÃO: ocupa altura do container */
-                                                             max-height: 1300px; /* limita altura máxima */
-                                                             }
+#poke {
+  width: 100%; /* ALTERAÇÃO: ajustar largura automática */
+  height: 100%; /* ALTERAÇÃO: ocupa altura do container */
+  max-height: 1300px; /* limita altura máxima */
+}
 
-                                                             .turn-on{
-                                                                 width: 100px;
-                                                                     position: absolute;
-                                                                         top: 930px;  /* ALTERAÇÃO: posicionei em relação ao container */
-                                                                             right: 630px;
-                                                                             }
+.turn-on {
+  width: 100px;
+  position: absolute;
+  top: 930px; /* ALTERAÇÃO: posicionei em relação ao container */
+  right: 630px;
+}
 
-                                                                             #power{
-                                                                                 background-color: red;
-                                                                                     padding: 15px;
-                                                                                         border-radius: 50px;
-                                                                                             width: 70px;
-                                                                                                 height: 70px;
-                                                                                                     font-size: 30px;
-                                                                                                         color: white;
-                                                                                                             border: solid 5px black;
-                                                                                                                 cursor: pointer;
-                                                                                                                 }
+#power {
+  background-color: red;
+  padding: 15px;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  color: white;
+  border: solid 5px black;
+  cursor: pointer;
+}
 
-                                                                                                                 .leds{
-                                                                                                                     position: absolute;
-                                                                                                                         top: 210px; /* ALTERAÇÃO: LEDs posicionados em relação ao container */
-                                                                                                                             left: 305px;
-                                                                                                                                 display: flex;
-                                                                                                                                     gap: 10px;
-                                                                                                                                     }
+.leds {
+  position: absolute;
+  top: 210px; /* ALTERAÇÃO: LEDs posicionados em relação ao container */
+  left: 305px;
+  display: flex;
+  gap: 10px;
+}
 
-                                                                                                                                     .leds button {
-                                                                                                                                       width: 50px;
-                                                                                                                                         height: 50px;
-                                                                                                                                           border-radius: 50%;
-                                                                                                                                             border: solid 3px black;
-                                                                                                                                               background-color: black;
-                                                                                                                                                 transition: background-color 0.2s ease;
-                                                                                                                                                 }
+.leds button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 3px black;
+  background-color: black;
+  transition: background-color 0.2s ease;
+}
 
-                                                                                                                                                 /* Classes de piscar */
-                                                                                                                                                 .piscando-red {
-                                                                                                                                                   animation: piscarRed 3s infinite; /* ALTERAÇÃO: padronizei a duração */
-                                                                                                                                                   }
+/* Classes de piscar */
+.piscando-red {
+  animation: piscarRed 3s infinite; /* ALTERAÇÃO: padronizei a duração */
+}
 
-                                                                                                                                                   .piscando-yellow {
-                                                                                                                                                     animation: piscarYellow 5s infinite;
-                                                                                                                                                     }
+.piscando-yellow {
+  animation: piscarYellow 5s infinite;
+}
 
-                                                                                                                                                     .piscando-green {
-                                                                                                                                                       animation: piscarGreen 4s infinite;
-                                                                                                                                                       }
+.piscando-green {
+  animation: piscarGreen 4s infinite;
+}
 
-                                                                                                                                                       @keyframes piscarRed {
-                                                                                                                                                         0%, 50%, 100% { background-color: red; }
-                                                                                                                                                           25%, 75% { background-color: black; }
-                                                                                                                                                           }
+@keyframes piscarRed {
+  0%,
+  50%,
+  100% {
+    background-color: red;
+  }
+  25%,
+  75% {
+    background-color: black;
+  }
+}
 
-                                                                                                                                                           @keyframes piscarYellow {
-                                                                                                                                                             0%, 50%, 100% { background-color: yellow; }
-                                                                                                                                                               25%, 75% { background-color: black; }
-                                                                                                                                                               }
+@keyframes piscarYellow {
+  0%,
+  50%,
+  100% {
+    background-color: yellow;
+  }
+  25%,
+  75% {
+    background-color: black;
+  }
+}
 
-                                                                                                                                                               @keyframes piscarGreen {
-                                                                                                                                                                 0%, 50%, 100% { background-color: green; }
-                                                                                                                                                                   25%, 75% { background-color: black; }
-                                                                                                                                                                   }
+@keyframes piscarGreen {
+  0%,
+  50%,
+  100% {
+    background-color: green;
+  }
+  25%,
+  75% {
+    background-color: black;
+  }
 }
