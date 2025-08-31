@@ -128,27 +128,4 @@ body {
     background-color: rgb(0, 0, 0);
   }
 
-  /* .container-principal {
-    background-color: red;
-    /* width: 500px; */
-  /* }
-
-  .leds {
-    left: 158px;
-    gap: 8px;
-  }
-
-  .leds button {
-    width: 23px;
-    height: 23px;
-  }
-
-  .turn-on{
-    right: 343px;
-  }  */
-
-  /* #power{
-    width: 34px;
-    height: 34px;
-  } */
 }
